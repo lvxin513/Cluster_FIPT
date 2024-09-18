@@ -1,5 +1,9 @@
 # README
 
+##  Abstract
+
+Decomposing a scene into its material properties and illumination, given the geometry and multi-view HDR observations of an indoor environment, is a fundamental yet ill-posed problem in computer vision and graphics. Existing approaches, when combined with neural rendering techniques, have achieved remarkable success in object-specific scenarios. However, in complex indoor scenes, adjacent points on the same instance are often incorrectly classified into different materials. To address the issue of inconsistencies in material estimation, we extend Factorized Inverse Path Tracing (FIPT) with a segmentation-based hierarchical clustering approach  to obtain more accurate results for albedo, roughness, and metallic. Additionally, we present a voxel grid filter to reduce computational time while obtaining satisfactory results. Extensive experiments on both synthetic and real-world room-scale scenes demonstrate that our method can produce consistent and accurate material estimations. Furthermore, we present promising outcomes in specific AR/VR applications, including novel view synthesis, object insertion, and relighting.
+
 ## Setup
 
 Set up the environment via:
@@ -54,6 +58,6 @@ python -m ipykernel install --user --name=ir
 
 You can check the 'demo' directory, which contains Jupyter notebook files for both visualization and quantitative results. Besides, the application of relighting and object inserting can be find.
 
-![image-20240826152732026](C:\Users\lvxin\AppData\Roaming\Typora\typora-user-images\image-20240826152732026.png)
+![image-20240826152732026](Result.png)
 
  
