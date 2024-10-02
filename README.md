@@ -1,8 +1,8 @@
 # README
 
-##  Abstract
+##  Hierarchical Clustering for Consistent Inverse Rendering of Indoor Scenes
 
-Decomposing a scene into its material properties and illumination, given the geometry and multi-view HDR observations of an indoor environment, is a fundamental yet challenging problem in computer vision and graphics. Existing approaches, combined with neural rendering techniques, have shown promising results in object-specific scenarios but often struggle with inconsistencies in material estimation within complex indoor scenes. To address this issue, we propose an Adaptive Inverse Rendering method with Hierarchical Clustering. Our method extends Factorized Inverse Path Tracing (FIPT) with a semantic-aware hierarchical clustering approach to obtain more accurate and consistent estimates of albedo, roughness, and metallic properties. Additionally, we introduce a voxel grid filter to further reduce computational time. Experimental results on both synthetic and real-world room-scale scenes demonstrate that our method produces more consistent and accurate material estimations compared to state-of-the-art methods. Furthermore, we showcase promising applications in AR/VR, including novel view synthesis, object insertion, and relighting. Our work contributes to advancing the field of inverse rendering and has the potential to benefit various computer vision and graphics applications.
+This repository includes the source code and datasets for the paper titled *"Hierarchical Clustering for Consistent Inverse Rendering of Indoor Scenes."* We offer two synthetic scenes (kitchen and living room) and one real scene (classroom). Using the provided code and data, readers can replicate the results presented in the paper.
 
 ## Setup
 
