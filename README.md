@@ -2,7 +2,7 @@
 
 ##  Abstract
 
-Decomposing a scene into its material properties and illumination, given the geometry and multi-view HDR observations of an indoor environment, is a fundamental yet ill-posed problem in computer vision and graphics. Existing approaches, when combined with neural rendering techniques, have achieved remarkable success in object-specific scenarios. However, in complex indoor scenes, adjacent points on the same instance are often incorrectly classified into different materials. To address the issue of inconsistencies in material estimation, we extend Factorized Inverse Path Tracing (FIPT) with a segmentation-based hierarchical clustering approach  to obtain more accurate results for albedo, roughness, and metallic. Additionally, we present a voxel grid filter to reduce computational time while obtaining satisfactory results. Extensive experiments on both synthetic and real-world room-scale scenes demonstrate that our method can produce consistent and accurate material estimations. Furthermore, we present promising outcomes in specific AR/VR applications, including novel view synthesis, object insertion, and relighting.
+Decomposing a scene into its material properties and illumination, given the geometry and multi-view HDR observations of an indoor environment, is a fundamental yet challenging problem in computer vision and graphics. Existing approaches, combined with neural rendering techniques, have shown promising results in object-specific scenarios but often struggle with inconsistencies in material estimation within complex indoor scenes. To address this issue, we propose an Adaptive Inverse Rendering method with Hierarchical Clustering. Our method extends Factorized Inverse Path Tracing (FIPT) with a semantic-aware hierarchical clustering approach to obtain more accurate and consistent estimates of albedo, roughness, and metallic properties. Additionally, we introduce a voxel grid filter to further reduce computational time. Experimental results on both synthetic and real-world room-scale scenes demonstrate that our method produces more consistent and accurate material estimations compared to state-of-the-art methods. Furthermore, we showcase promising applications in AR/VR, including novel view synthesis, object insertion, and relighting. Our work contributes to advancing the field of inverse rendering and has the potential to benefit various computer vision and graphics applications.
 
 ## Setup
 
@@ -16,6 +16,10 @@ pip install -r requirements.txt
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch # tested with tinycudann-1.7
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
 ```
+
+### Dataset
+
+The dataset is accessible at [Baidu Cloud](https://pan.baidu.com/s/1wSIU3ke_TbMk_YsB_BdWnQ) using the password "xkao". It includes two synthetic scenes and one real scene. For further information about dataset, please refer to the following repository: https://github.com/lwwu2/fipt.
 
 ### Train the model
 
