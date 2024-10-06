@@ -1,8 +1,9 @@
 # README
 
-##  Hierarchical Clustering for Consistent Inverse Rendering of Indoor Scenes
+### Consistent Inverse Rendering of Indoor Scenes via Semantic-Aware Hierarchical Clustering
 
-This repository includes the source code and datasets for the paper titled *"Hierarchical Clustering for Consistent Inverse Rendering of Indoor Scenes."* We offer two synthetic scenes (kitchen and living room) and one real scene (classroom). Using the provided code and data, readers can replicate the results presented in the paper.
+This repository includes the source code and datasets for the paper titled *"Consistent Inverse Rendering of Indoor Scenes via
+Semantic-Aware Hierarchical Clustering."* We offer two synthetic scenes (kitchen and living room) and one real scene (classroom). Using the provided code and data, readers can replicate the results presented in the paper.
 
 ## Setup
 
